@@ -1,4 +1,8 @@
-var trace = require('tracer').colorConsole({level: 'warn'})
-trace.log('This is log!!!')
-trace.warn('This is warn!!!')
-trace.error('This is error')
+const add = (a, b) => (a + b)
+const area = (r) => {
+  const PI = 3.14
+  return PI * r * r
+}
+
+console.log('3 + 5 = ' + add(3, 5))
+console.log('area = ' + area(3))
