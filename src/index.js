@@ -1,5 +1,11 @@
-const numbers = [1, 2, 3, 4]
-const even = numbers.filter(number => number % 2 == 0)
-console.log(numbers)
-console.log(even)
+const props = {
+  width: 100,
+  height: 200,
+  type: 'text',
+  radius: 10,
+}
+
+const {width, height} = props
+console.log(width)
+console.log(height)
 
