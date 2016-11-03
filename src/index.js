@@ -1,14 +1,5 @@
-let dog = {
-  sound: 'hong hong',
-  bark: function() {
-    console.log(this.sound)
-  }
-}
-
-let cat = {
-  sound: 'nian nian',
-  bark: dog.bark.bind(dog)
-}
-
-cat.bark()
+const numbers = [1, 2, 3]
+const x2 = numbers.map(number => 2 * number)
+console.log(numbers)
+console.log(x2)
 
