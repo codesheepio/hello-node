@@ -1,15 +1,9 @@
 const wait500 = () => {
   setTimeout(()=>{
     console.log('Wait 500 millisecs')
+    setTimeout(() => {
+      console.log('Wait 300 millisecs')
+      console.log('no wait')
+    })
   }, 500)
 }
-
-const wait300 = () => {
-  setTimeout(() => {
-    console.log('Wait 300 millisecs')
-  })
-}
-
-wait500()
-wait300()
-console.log('no wait')
