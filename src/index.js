@@ -1,8 +1,5 @@
-const add = (a, b) => (a + b)
-const area = (r) => {
-  const PI = 3.14
-  return PI * r * r
-}
-
-console.log('3 + 5 = ' + add(3, 5))
-console.log('area = ' + area(3))
+import * as math from './math'
+import area from './math'
+console.log(math.add(3, 5))
+console.log(math.PI)
+console.log(area(3))
