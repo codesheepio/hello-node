@@ -1,5 +1,15 @@
-import * as math from './math'
-import area from './math'
-console.log(math.add(3, 5))
-console.log(math.PI)
-console.log(area(3))
+const wait500 = () => {
+  setTimeout(()=>{
+    console.log('Wait 500 millisecs')
+  }, 500)
+}
+
+const wait300 = () => {
+  setTimeout(() => {
+    console.log('Wait 300 millisecs')
+  })
+}
+
+wait500()
+wait300()
+console.log('no wait')
